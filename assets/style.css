@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    background-color: #5EB1BF;
+    padding: 20px 10px;
+}
+
+.main {
+    background-color: #CDEDF6;
+    padding: 20px 10px;
+}
+
+.main-container {
+    background-color: #DEF2F8;
+    margin: 45px auto;
+    border: 1px solid black;
+}
+
+#input-container {
+    max-width: 300px;
+    height: 200px;
+}
+
+#output-container {
+    max-width: 300px;
+    height: 100px;
+}

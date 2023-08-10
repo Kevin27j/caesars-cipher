@@ -1,11 +1,9 @@
-const encryptedInput = document.getElementById("encrypt-input").value;
+const encryptedInput = document.getElementById("encrypt-input");
 const encryptButton = document.getElementById("encrypt-button");
 const decryptedOutput = document.getElementById("decrypt-output");
 
 function handleClick(){
-    // console.log(encryptedInput.value)
-
-    decryptedOutput.innerHTML = rot13(encryptedInput)
+    decryptedOutput.innerText = rot13(encryptedInput.value);
 }
 
 function rot13(text){
@@ -15,18 +13,21 @@ function rot13(text){
 
     for (let i = 0; i < text.length; i++){
         let currentCharacter = text[i];
-        let index = alphabet.indexOf(currentCharacter);
+        // find index of current character, and transform to upper case
+        let index = alphabet.indexOf(currentCharacter.toUpperCase());
         // check for non-letter char
         if (index !== -1){
             let encryptedText = keyAlphabet[index]
-            result += encryptedText;
+            if (currentCharacter = currentCharacter.toLowerCase()){
+                result += encryptedText.toLowerCase();
+            } else {
+                result += encryptedText.toUpperCase();
+            }
+        } else {
+            result += currentCharacter;
         }
-        
-        // console.log(currentCharacter)
     }
     return result;
 }
-
-// rot13(encryptedInput);
 
 encryptButton.addEventListener("click", handleClick)
