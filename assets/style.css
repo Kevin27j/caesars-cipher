@@ -13,16 +13,20 @@ body {
     align-items: center;
 }
 
+/* HEADER SECTION */
 .header {
     background-color: #5EB1BF;
     padding: 20px 10px;
 }
 
+/* MAIN SECTION */
 .main {
     background-color: #F5F5F5;
     padding: 20px 10px;
+    min-height: 50vh;
 }
 
+/* MAIN ELEMENTS */
 .main-container {
     background-color: #DEF2F8;
     margin: 45px auto;
@@ -33,6 +37,7 @@ body {
 #input-container {
     max-width: 300px;
     height: 140px;
+    gap: 10px;
 }
 
 #output-container {
@@ -40,6 +45,15 @@ body {
     height: 100px;
 }
 
+.input-form {
+    padding: 2px;
+    width: 150px;
+    border-radius: 0;
+    border: 1px solid black;
+    background-color: #F5F5F5;
+}
+
+/* FOOTER SECTION */
 .footer {
     padding: 20px 0;
     background-color: #5EB1BF;
