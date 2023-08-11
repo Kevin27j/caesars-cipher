@@ -19,7 +19,7 @@ body {
 }
 
 .main {
-    background-color: #CDEDF6;
+    background-color: #F5F5F5;
     padding: 20px 10px;
 }
 
@@ -27,14 +27,26 @@ body {
     background-color: #DEF2F8;
     margin: 45px auto;
     border: 1px solid black;
+    flex-direction: column;
 }
 
 #input-container {
     max-width: 300px;
-    height: 200px;
+    height: 140px;
 }
 
 #output-container {
     max-width: 300px;
     height: 100px;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #5EB1BF;
+    gap: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
 }
