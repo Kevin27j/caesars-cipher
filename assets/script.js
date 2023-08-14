@@ -21,7 +21,7 @@ function rot13(text){
             if (currentCharacter = currentCharacter.toLowerCase()){
                 result += encryptedText.toLowerCase();
             } else {
-                result += encryptedText.toUpperCase();
+                result += encryptedText.slice(currentCharacter.toUpperCase());
             }
         } else {
             result += currentCharacter;
